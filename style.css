@@ -1,7 +1,91 @@
 :root {
-    --cor-de-fundo:#2EC4B6;
-    --cor-botao-comprar:#FF6666;
-    --cor-fundo-produto:#F1E8B8;
-    --cor-fundo-cabecalho:#5D2E8C;
-    --cor-verde-geral:#018E42;
+    --cor-de-fundo: #2EC4B6;
+    --cor-botao-comprar: #FF6666;
+    --cor-fundo-produto: #F1E8B8;
+    --cor-fundo-cabecalho: #5D2E8C;
+    --cor-verde-geral: #018E42;
+    --cor-fonte: #000000;
 }
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cabecalho {
+    background-color: var(--cor-fundo-cabecalho);
+    border-top: 10px solid var(--cor-verde-geral);
+    padding-bottom: 10px;
+}
+    .cabecalho__titulo {
+        text-align: center;
+    }
+    .cabecalho__opcoes {
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none; 
+        margin: 0;
+        padding: 0;
+    }
+        .cabecalho__opcao a { 
+            color: var(--cor-fonte);
+            text-decoration: none;
+        }
+.conteiner {
+    background-color: var(--cor-de-fundo);
+    padding-bottom: 25px;
+}
+    .conteiner__titulo {
+        margin: 0;
+        padding-top: 20px;
+        padding-left: 10px;
+    }
+    .conteiner__cachorro {}
+        .conteiner__cachorro--titulo, .conteiner__gato--titulo{
+            padding-left: 10px;
+        }
+    .conteiner__produtos{
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow: scroll;
+    }
+        .conteiner__produto {
+            background-color: var(--cor-fundo-produto);
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 20px 10px 20px;
+            margin: 0 10px 0 10px;
+        }
+            .conteiner__produto--foto {
+                width: 215px;
+            }
+            .conteiner__produto--comprar {
+                background-color: var(--cor-botao-comprar);
+                border: 0;
+                width: 60%;
+                border-radius: 6px;
+            }
+.rodape {
+    background-color: var(--cor-verde-geral);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+    .rodape__titulo {}
+    .rodape__contatos {
+        display: flex;
+        justify-content: space-evenly;
+        width: 200px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }    
+        .rodape__contato a {
+            text-decoration: none;
+            color: var(--cor-fonte);
+        } 
+    
+        
